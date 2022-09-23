@@ -1,0 +1,19 @@
+<div>
+  <div class="row playlist-container">
+      <div class="row__inner" *ngFor="let playitems of playListItems">
+
+        <div class="tile" (click)="setUrlForPlayer(playitems);">
+          <div class="tile__media">
+            <img class="tile__img" [src]=playitems.poster  alt={{playitems.name}}  />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title">
+                {{playitems.name | customUppercase }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+

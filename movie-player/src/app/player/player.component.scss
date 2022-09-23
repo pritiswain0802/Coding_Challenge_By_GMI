@@ -1,0 +1,20 @@
+
+$base-height : 30rem;
+$base-width:100%;
+
+.items{
+width: $base-width;
+height: $base-height;
+}
+
+.player-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+iframe{
+  width: $base-width;
+  height: $base-height;
+}
